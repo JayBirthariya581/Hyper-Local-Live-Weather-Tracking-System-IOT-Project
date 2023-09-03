@@ -23,12 +23,6 @@ The Hyper-Local Live Weather Tracking System is an innovative IoT project design
 ### Practical Use Cases
 - The app is not just for checking the weather; it has practical applications. For example, it can alert you when it starts raining so you can bring in your laundry or tell you if your plants are getting enough sunlight.
 
-## How to Use
-- [Download the Android app](#) from the Google Play Store (Coming Soon).
-- Install the app on your Android device.
-- Open the app and grant location permission.
-- The app will automatically detect your location and provide real-time weather information.
-
 ## Contributing
 Contributions to this project are welcome. If you find a bug or have a feature request, please open an issue on the Github repository. If you would like to contribute code, please fork the repository and create a pull request.
 
