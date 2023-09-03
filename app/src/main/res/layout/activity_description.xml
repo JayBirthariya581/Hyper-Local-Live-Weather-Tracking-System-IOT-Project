@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8fafb"
+    tools:context=".DescriptionActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#113255"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="40dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Hyper Local\n Live Weather Tracking System"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heading">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingVertical="10dp"
+                android:text="- Description -"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is hyper local live weather tracker, where hyper local means we can use it anywhere in our local place like farm,garden or any place which requires attention to light and temperature conditions.\n\nThis project consist of :\n\n1)ESP8266 : For calculating light intensity using ldr and sending the data to firebase \n\n2)Firebase Real time database : Database for connection of android app and esp8266 for tracking \n\n3)Android App : To monitor weather conditions in realtime"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingVertical="10dp"
+                android:text="- Applications -"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1] Can be used in houses for various purposes like for example : Tracking of sunlight over papad, drying chillies, spices, pickles etc \n\n2] Sunlight monitoring (in realtime) for exotic fruits and flowers.\n\n3] Farmer can use this to track weather conditions (in realtime) of their farm fields(hyper local) from anywhere with the help of android app."
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
